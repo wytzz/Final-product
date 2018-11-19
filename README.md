@@ -1,1 +1,1 @@
-# Project-proposal
+Stel je voor je hebt een creatief idee nodig voor bijvoorbeeld een project. Je creativiteit is ver te zoeken en je hebt eigenlijk wat hulp nodig. Waarom zou je dan geen brainstorm app gebruiken? Je toetst een woord. De app toont direct een web met woorden die gerelateerd zijn met het ingetoetste woord. Wanneer je een woord in het interessant web interessant vind druk je op dit woord en krijg je een web met gerelateerde woorden aan dit onderwerp te zien. Hierdoor kom je telkens op nieuwe ingevingen. 
