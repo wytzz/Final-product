@@ -18,3 +18,4 @@ Via een app waarbij de voorraad van een restaurant wordt bijgehouden zal het nau
 - Overzicht geven hoeveel er van alles in voorraad is
 - Gebruiksvriendelijkheid
 
+[!alt text](https://github.com/wytzz/Project-proposal/blob/master/doc/Schermafbeelding%202019-01-07%20om%2013.47.23.png)
