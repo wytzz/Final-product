@@ -5,3 +5,5 @@ Drie voorstellen voor een project proposal voorgesteld aan een student assistent
 Niets kunnen doen door ziekte.
 
 # Day 3 09-01-2019
+Moet iets uitgebreider, er werd aangeraden niet met firebase te werken maar in rester. 
+
