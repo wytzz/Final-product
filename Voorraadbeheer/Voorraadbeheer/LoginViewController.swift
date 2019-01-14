@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 extension UITextField {
     func setBottomborder() {
         self.layer.shadowColor = UIColor.darkGray.cgColor
@@ -18,15 +19,28 @@ extension UITextField {
 
 class LoginViewController: UIViewController {
 
-    @IBOutlet weak var UsernameTextfield: UITextField!
+    @IBOutlet weak var emailTextfield: UITextField!
     @IBOutlet weak var PasswordTextfield: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        UsernameTextfield.setBottomborder()
+        self.navigationController?.isNavigationBarHidden = false
+        emailTextfield.setBottomborder()
         PasswordTextfield.setBottomborder()
     }
-    
-
+    @IBAction func loginButton(_ sender: UIButton) {
+        Auth.auth().signIn(withEmail: emailTextfield.text!, password: PasswordTextfield.text!) { (user, error) in
+            if user != nil {
+                self.performSegue(withIdentifier: "login", sender: self)
+            } else {
+                if let myError = error?.localizedDescription {
+                    let erroralert = UIAlertController(title: "There was a problem", message: myError , preferredStyle: .alert)
+                    let okButton = UIAlertAction(title: "OK", style: .default, handler: nil)
+                    erroralert.addAction(okButton)
+                    self.present(erroralert, animated: true, completion: nil)
+            }
+    }
+    }
+    }
 
 }
 

@@ -1,22 +1,22 @@
 //
-//  IntroductionViewController.swift
+//  AccountViewController.swift
 //  Voorraadbeheer
 //
-//  Created by Wytze Dijkstra on 11/01/2019.
+//  Created by Wytze Dijkstra on 14/01/2019.
 //  Copyright © 2019 Wytze Dijkstra. All rights reserved.
 //
 
 import UIKit
 
-class IntroductionViewController: UIViewController {
+class AccountViewController: UIViewController {
 
     override func viewDidLoad() {
-        self.navigationController?.isNavigationBarHidden = true
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
+
     /*
     // MARK: - Navigation
 

@@ -8,6 +8,8 @@ target 'Voorraadbeheer' do
   # Pods for Voorraadbeheer
 
 pod 'Firebase/Core'
+pod 'Firebase/Auth'
+
 
 end
 
