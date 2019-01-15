@@ -17,3 +17,4 @@ Begonnen met de inlogfunctie, er kan een account aangemaakt worden via Firebase.
 Inlogfuncite afgerond, het wachtwoord wordt twee keer gecontroleerd. Wanneer er iets verkeerd gaat wordt via een melding de error gegeven. Toevoegfunctie begonnen.
 
 # Day 7 15-01-2019
+Producten kunnen worden toegevoegd aan de rester database. Deze worden vervolgens ook weergegeven in de app vanuit de database app. Probleem is nog dat deze niet wordt herladen wanneer een product wordt toegevoegd.
