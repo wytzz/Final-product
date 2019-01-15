@@ -21,12 +21,19 @@ class AddToStockTableViewController: UITableViewController, UIPickerViewDataSour
         notificationQuantityTextfield.text = String(Int(sender.value))
     }
     
-    var selectedCategory = 0
-    var categories : [String] = []
+    var product : products?
+    
+    private let dataSource = ["liters", "stuks", "gram", "kilogram", "flessen"]
+    var selectedCategory : String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        categories = ["liters", "stuks", "gram","kilogram","flessen"]
+        quantityTypePickerView.dataSource = self
+        quantityTypePickerView.delegate = self
+        quantityTextfield.setBottomborder()
+        notificationQuantityTextfield.setBottomborder()
+        productNameTextfield.setBottomborder()
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -40,26 +47,19 @@ class AddToStockTableViewController: UITableViewController, UIPickerViewDataSour
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return categories[row]
+        return dataSource[row]
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return categories.count
+        return dataSource.count
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        selectedCategory = row
+        selectedCategory = dataSource[row]
     }
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
+
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -116,16 +116,22 @@ class AddToStockTableViewController: UITableViewController, UIPickerViewDataSour
     }
     */
     
-    func putScoreInList () {
-        let url = URL(string: "https://ide50-wytzz.cs50.io:8080/list")!
+    func putScoreInList (productname : String, selectedCategory : String, quantity: Int, notificationQuantity: Int) {
+        let url = URL(string: "https://ide50-wytzz.legacy.cs50.io:8080/list")!
         var request = URLRequest(url: url)
         request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
         request.httpMethod = "POST"
-        let postString = "title=\(productNameTextfield.text!)&quantity_type=\(selectedCategory)&quantity=\(quantityTextfield.text!)&notification_quantity=\(notificationQuantityTextfield.text!))"
+        let postString = "title=\(productname)&quantity_type=\(selectedCategory)&quantity=\(quantity)&notification_quantity=\(notificationQuantity))"
         request.httpBody = postString.data(using: .utf8)
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
         }
         task.resume()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        guard segue.identifier == "saveUnwind" else { return }
+        putScoreInList(productname: productNameTextfield.text!, selectedCategory: selectedCategory, quantity: Int(quantityTextfield.text!)!, notificationQuantity: Int(notificationQuantityTextfield.text!)!)
     }
 
 }

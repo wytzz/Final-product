@@ -11,10 +11,13 @@ import UIKit
 class IntroductionViewController: UIViewController {
 
     override func viewDidLoad() {
-        self.navigationController?.isNavigationBarHidden = true
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func unwindToIntroduction (segue: UIStoryboardSegue) {
+        
     }
     
     /*

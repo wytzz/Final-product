@@ -40,7 +40,6 @@ class SignUpViewController: UIViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.isNavigationBarHidden = false
         EmailTextfield.setBottomborder()
         PasswordTextfield.setBottomborder()
         PasswordCheckTextfield.setBottomborder()

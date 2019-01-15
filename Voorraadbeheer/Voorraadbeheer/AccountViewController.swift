@@ -7,9 +7,19 @@
 //
 
 import UIKit
+import Firebase
 
 class AccountViewController: UIViewController {
 
+    @IBAction func logOutButton(_ sender: UIButton) {
+        do {
+            try Auth.auth().signOut()
+            self.performSegue(withIdentifier: "logout", sender: self)
+        }
+        catch {
+            print("Couldn't log out")
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/wytzedijk/Documents/Informatiekunde/Project-proposal/Voorraadbeheer/Voorraadbeheer/ProductController.swift">
+   </FileRef>
+   <FileRef
       location = "group:Voorraadbeheer.xcodeproj">
    </FileRef>
    <FileRef

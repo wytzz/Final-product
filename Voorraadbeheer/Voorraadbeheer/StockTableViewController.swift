@@ -10,44 +10,45 @@ import UIKit
 
 class StockTableViewController: UITableViewController {
 
-    var product = [products]()
-    
+    var products : [products] = []
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        product = products.loadSampleStock()
+        ProductController.shared.fetchProducts() { (products) in
+            if let products = products {
+                self.updateUI(with: products)
+            }
         }
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
-
-
-    // MARK: - Table view data source
-
+    }
+    
+    func updateUI(with products: [products]) {
+        DispatchQueue.main.async {
+            self.products = products
+            self.tableView.reloadData()
+        }
+    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return product.count
+        return products.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ProductIdentifier", for: indexPath)
-        let productje = product[indexPath.row]
+        let productje = products[indexPath.row]
         cell.textLabel?.text = productje.title
         cell.detailTextLabel?.text = "\(productje.quantity) \(productje.quantity_type)"
         return cell
     }
 
-
+    /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
         return true
     }
-
+    */
 
     /*
     // Override to support editing the table view.
@@ -85,5 +86,22 @@ class StockTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func unwindToStockTableView (segue: UIStoryboardSegue) {
+        
+        }
+    
+    override func prepare(for segue: UIStoryboardSegue,
+                          sender: Any?) {
+        if segue.identifier == "showDetails" {
+            let AddToStockTableViewController = segue.destination as! AddToStockTableViewController
+            let indexPath = tableView.indexPathForSelectedRow!
+            let selectedproduct = products[indexPath.row]
+            AddToStockTableViewController.product = selectedproduct
+            
+        }
+        
+    }
+    
 
 }

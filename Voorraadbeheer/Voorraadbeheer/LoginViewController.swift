@@ -23,7 +23,6 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var PasswordTextfield: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.isNavigationBarHidden = false
         emailTextfield.setBottomborder()
         PasswordTextfield.setBottomborder()
     }

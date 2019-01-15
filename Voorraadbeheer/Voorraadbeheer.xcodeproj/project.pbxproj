@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4D495D82C8A9927146A9313A /* Pods_Voorraadbeheer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B288F4B08B20419B81AECB6 /* Pods_Voorraadbeheer.framework */; };
+		D36BB91321EE1EA100420962 /* ProductController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36BB91221EE1EA100420962 /* ProductController.swift */; };
 		D3B5C34D21E8D48E002EB502 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3B5C34C21E8D48E002EB502 /* GoogleService-Info.plist */; };
 		D3B5C34F21E8DBE5002EB502 /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B5C34E21E8DBE5002EB502 /* IntroductionViewController.swift */; };
 		D3B5C35121E8DD3F002EB502 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B5C35021E8DD3F002EB502 /* SignUpViewController.swift */; };
@@ -26,6 +27,7 @@
 		2B288F4B08B20419B81AECB6 /* Pods_Voorraadbeheer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Voorraadbeheer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E5AFCBCAFE667F830AF150D /* Pods-Voorraadbeheer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Voorraadbeheer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Voorraadbeheer/Pods-Voorraadbeheer.release.xcconfig"; sourceTree = "<group>"; };
 		861DB59768B0420D7E467BEB /* Pods-Voorraadbeheer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Voorraadbeheer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Voorraadbeheer/Pods-Voorraadbeheer.debug.xcconfig"; sourceTree = "<group>"; };
+		D36BB91221EE1EA100420962 /* ProductController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProductController.swift; path = "/Users/wytzedijk/Documents/Informatiekunde/Project-proposal/Voorraadbeheer/Voorraadbeheer/ProductController.swift"; sourceTree = "<absolute>"; };
 		D3B5C34C21E8D48E002EB502 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D3B5C34E21E8DBE5002EB502 /* IntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
 		D3B5C35021E8DD3F002EB502 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				D3B5C34C21E8D48E002EB502 /* GoogleService-Info.plist */,
+				D36BB91221EE1EA100420962 /* ProductController.swift */,
 				D3EC076621E75FF0008E8FF9 /* AppDelegate.swift */,
 				D3B5C34E21E8DBE5002EB502 /* IntroductionViewController.swift */,
 				D3EC076821E75FF0008E8FF9 /* LoginViewController.swift */,
@@ -235,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3B5C35521ECDC1E002EB502 /* StockTableViewController.swift in Sources */,
+				D36BB91321EE1EA100420962 /* ProductController.swift in Sources */,
 				D3EC076921E75FF0008E8FF9 /* LoginViewController.swift in Sources */,
 				D3B5C35321ECDBFD002EB502 /* AccountViewController.swift in Sources */,
 				D3B5C35721ECE258002EB502 /* Products.swift in Sources */,
