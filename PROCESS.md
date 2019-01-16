@@ -7,3 +7,14 @@ Niets kunnen doen door ziekte.
 # Day 3 09-01-2019
 Moet iets uitgebreider, er werd aangeraden niet met firebase te werken maar in rester. 
 
+# Day 4 10-01-2019
+In het groepsgesprek over de app gesproken. Er werd toch aangeraden met firebase de loginfunctie te doen. Groepsgenoot zei dat dit makkelijk was. De database van de producten wel op rester maken.
+
+# Day 5 11-01-2019
+Begonnen met de inlogfunctie, er kan een account aangemaakt worden via Firebase. Verder alle viewcontrollers aangemaakt en aan elkaar gekoppeld voor de deadline van het eerste prototype.
+
+# Day 6 14-01-2019
+Inlogfuncite afgerond, het wachtwoord wordt twee keer gecontroleerd. Wanneer er iets verkeerd gaat wordt via een melding de error gegeven. Toevoegfunctie begonnen.
+
+# Day 7 15-01-2019
+Producten kunnen worden toegevoegd aan de rester database. Deze worden vervolgens ook weergegeven in de app vanuit de database app. Probleem is nog dat deze niet wordt herladen wanneer een product wordt toegevoegd.
