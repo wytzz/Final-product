@@ -18,3 +18,17 @@ Inlogfuncite afgerond, het wachtwoord wordt twee keer gecontroleerd. Wanneer er 
 
 # Day 7 15-01-2019
 Producten kunnen worden toegevoegd aan de rester database. Deze worden vervolgens ook weergegeven in de app vanuit de database app. Probleem is nog dat deze niet wordt herladen wanneer een product wordt toegevoegd.
+
+# Day 8 16-01-2019
+Tegen veel problemen aangelopen die nog niet zijn opgelost aan het einde van de dag. Besloten om de pagina waar producten worden aangemaakt toch een viewcontroller te maken in plaats van een tableviewcontroller, voornamelijk omdat het later makkelijker kan worden opgemaakt. Verder veel kleine bugs of vragen die ik me vandaag gesteld heb:
+- [ ] Wat wil ik met de account functie doen
+- [ ] Laad product direct wanneer toegevoegd
+- [x] Product kunnen verwijderen
+    - [ ] Nu ook uit rester
+- [x] Hoeveelheid product in StockTableViewController kunnen aanpassen
+    - [ ] Nu nog ook laten aanpassen in rester
+- [ ] Categorieen?
+- [x] Wanneer cellen leeg zijn product niet toevoegen
+- [ ] Cell highlighten wanner te weinig is
+- [ ] Opmaak
+- [ ] Aantal is niet hetzelfde als stepper
