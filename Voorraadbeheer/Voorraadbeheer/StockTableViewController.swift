@@ -12,6 +12,8 @@ class StockTableViewController: UITableViewController {
 
     var products : [products] = []
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         ProductController.shared.fetchProducts() { (products) in
@@ -19,6 +21,7 @@ class StockTableViewController: UITableViewController {
                 self.updateUI(with: products)
             }
         }
+        navigationItem.leftBarButtonItem = editButtonItem
     }
     
     func updateUI(with products: [products]) {
@@ -35,32 +38,49 @@ class StockTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ProductIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ProductIdentifier", for: indexPath) as! StockTableViewCell
         let productje = products[indexPath.row]
-        cell.textLabel?.text = productje.title
-        cell.detailTextLabel?.text = "\(productje.quantity) \(productje.quantity_type)"
+        cell.productNameLabel.text = productje.title
+        cell.quantityLabel.text = productje.quantity
+        cell.quantityTypeLabel.text = productje.quantity_type
+        if Int(productje.quantity)! <= Int(productje.notification_quantity)! {
+            cell.backgroundColor = UIColor.red
+        }
         return cell
     }
 
-    /*
+    
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
         return true
     }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+    
+    
+    func deleteProduct (id: Int) {
+        let url = URL(string: "https://ide50-wytzz.legacy.cs50.io:8080/list")!
+        var request = URLRequest(url: url)
+        //request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+        request.httpMethod = "DELETE"
+        let delete = "/\(id)"
+        request.httpBody = delete.data(using: .utf8)
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+        }
+        task.resume()
+        
     }
-    */
+    
+    // Override to support editing the table view.
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        let productje = products[indexPath.row]
+        if editingStyle == .delete {
+            deleteProduct(id: productje.id)
+            products.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+        deleteProduct(id: productje.id)
+    }
+ 
 
     /*
     // Override to support rearranging the table view.
@@ -88,16 +108,17 @@ class StockTableViewController: UITableViewController {
     */
     
     @IBAction func unwindToStockTableView (segue: UIStoryboardSegue) {
+            self.tableView.reloadData()
         
         }
     
     override func prepare(for segue: UIStoryboardSegue,
                           sender: Any?) {
         if segue.identifier == "showDetails" {
-            let AddToStockTableViewController = segue.destination as! AddToStockTableViewController
+            let AddToStockViewController = segue.destination as! AddToStockViewController
             let indexPath = tableView.indexPathForSelectedRow!
             let selectedproduct = products[indexPath.row]
-            AddToStockTableViewController.product = selectedproduct
+            AddToStockViewController.product = selectedproduct
             
         }
         

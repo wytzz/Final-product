@@ -9,6 +9,8 @@ target 'Voorraadbeheer' do
 
 pod 'Firebase/Core'
 pod 'Firebase/Auth'
+pod "GMStepper"
+
 
 
 end

@@ -15,12 +15,14 @@
 		D3B5C35321ECDBFD002EB502 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B5C35221ECDBFD002EB502 /* AccountViewController.swift */; };
 		D3B5C35521ECDC1E002EB502 /* StockTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B5C35421ECDC1E002EB502 /* StockTableViewController.swift */; };
 		D3B5C35721ECE258002EB502 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B5C35621ECE258002EB502 /* Products.swift */; };
-		D3B5C35921ECE2DB002EB502 /* AddToStockTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B5C35821ECE2DB002EB502 /* AddToStockTableViewController.swift */; };
 		D3EC076721E75FF0008E8FF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EC076621E75FF0008E8FF9 /* AppDelegate.swift */; };
 		D3EC076921E75FF0008E8FF9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EC076821E75FF0008E8FF9 /* LoginViewController.swift */; };
 		D3EC076C21E75FF0008E8FF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3EC076A21E75FF0008E8FF9 /* Main.storyboard */; };
 		D3EC076E21E75FF2008E8FF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3EC076D21E75FF2008E8FF9 /* Assets.xcassets */; };
 		D3EC077121E75FF2008E8FF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3EC076F21E75FF2008E8FF9 /* LaunchScreen.storyboard */; };
+		D3ED355921EF59EC000FDF2C /* AddToStockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ED355821EF59EC000FDF2C /* AddToStockViewController.swift */; };
+		D3ED355B21EF6B24000FDF2C /* StockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ED355A21EF6B24000FDF2C /* StockTableViewCell.swift */; };
+		D3ED355D21EF9A88000FDF2C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ED355C21EF9A88000FDF2C /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +36,6 @@
 		D3B5C35221ECDBFD002EB502 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		D3B5C35421ECDC1E002EB502 /* StockTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTableViewController.swift; sourceTree = "<group>"; };
 		D3B5C35621ECE258002EB502 /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
-		D3B5C35821ECE2DB002EB502 /* AddToStockTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToStockTableViewController.swift; sourceTree = "<group>"; };
 		D3EC076321E75FF0008E8FF9 /* Voorraadbeheer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Voorraadbeheer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3EC076621E75FF0008E8FF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3EC076821E75FF0008E8FF9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +43,9 @@
 		D3EC076D21E75FF2008E8FF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3EC077021E75FF2008E8FF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3EC077221E75FF2008E8FF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3ED355821EF59EC000FDF2C /* AddToStockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToStockViewController.swift; sourceTree = "<group>"; };
+		D3ED355A21EF6B24000FDF2C /* StockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTableViewCell.swift; sourceTree = "<group>"; };
+		D3ED355C21EF9A88000FDF2C /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,12 +95,14 @@
 				D3EC076621E75FF0008E8FF9 /* AppDelegate.swift */,
 				D3B5C34E21E8DBE5002EB502 /* IntroductionViewController.swift */,
 				D3EC076821E75FF0008E8FF9 /* LoginViewController.swift */,
+				D3ED355A21EF6B24000FDF2C /* StockTableViewCell.swift */,
 				D3B5C35021E8DD3F002EB502 /* SignUpViewController.swift */,
 				D3EC076A21E75FF0008E8FF9 /* Main.storyboard */,
-				D3B5C35821ECE2DB002EB502 /* AddToStockTableViewController.swift */,
+				D3ED355821EF59EC000FDF2C /* AddToStockViewController.swift */,
 				D3B5C35621ECE258002EB502 /* Products.swift */,
 				D3B5C35221ECDBFD002EB502 /* AccountViewController.swift */,
 				D3B5C35421ECDC1E002EB502 /* StockTableViewController.swift */,
+				D3ED355C21EF9A88000FDF2C /* TableViewController.swift */,
 				D3EC076D21E75FF2008E8FF9 /* Assets.xcassets */,
 				D3EC076F21E75FF2008E8FF9 /* LaunchScreen.storyboard */,
 				D3EC077221E75FF2008E8FF9 /* Info.plist */,
@@ -237,13 +243,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3ED355B21EF6B24000FDF2C /* StockTableViewCell.swift in Sources */,
 				D3B5C35521ECDC1E002EB502 /* StockTableViewController.swift in Sources */,
 				D36BB91321EE1EA100420962 /* ProductController.swift in Sources */,
+				D3ED355921EF59EC000FDF2C /* AddToStockViewController.swift in Sources */,
 				D3EC076921E75FF0008E8FF9 /* LoginViewController.swift in Sources */,
 				D3B5C35321ECDBFD002EB502 /* AccountViewController.swift in Sources */,
+				D3ED355D21EF9A88000FDF2C /* TableViewController.swift in Sources */,
 				D3B5C35721ECE258002EB502 /* Products.swift in Sources */,
 				D3B5C34F21E8DBE5002EB502 /* IntroductionViewController.swift in Sources */,
-				D3B5C35921ECE2DB002EB502 /* AddToStockTableViewController.swift in Sources */,
 				D3B5C35121E8DD3F002EB502 /* SignUpViewController.swift in Sources */,
 				D3EC076721E75FF0008E8FF9 /* AppDelegate.swift in Sources */,
 			);
