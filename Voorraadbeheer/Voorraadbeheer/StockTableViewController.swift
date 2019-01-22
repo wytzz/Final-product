@@ -12,10 +12,7 @@ class StockTableViewController: UITableViewController {
 
     var products : [products] = []
 
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewDidAppear(_ animated: Bool) {
         ProductController.shared.fetchProducts() { (products) in
             if let products = products {
                 self.updateUI(with: products)
@@ -43,7 +40,7 @@ class StockTableViewController: UITableViewController {
         cell.productNameLabel.text = productje.title
         cell.quantityLabel.text = productje.quantity
         cell.quantityTypeLabel.text = productje.quantity_type
-        if Int(productje.quantity)! <= Int(productje.notification_quantity)! {
+        if Double(productje.quantity)! <= Double(productje.notification_quantity)! {
             cell.backgroundColor = UIColor.red
         }
         return cell

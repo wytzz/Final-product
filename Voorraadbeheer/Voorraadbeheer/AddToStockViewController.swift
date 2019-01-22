@@ -14,11 +14,19 @@ class AddToStockViewController: UIViewController, UIPickerViewDelegate, UIPicker
     @IBOutlet weak var quantityTypeTextfield: UITextField!
     @IBOutlet weak var quantityTextfield: UITextField!
     @IBAction func quantityStepper(_ sender: UIStepper) {
-        quantityTextfield.text = String(Int(sender.value))
+        quantityTextfield.text = String(Double(sender.value))
     }
+    @IBOutlet weak var quantityStepperOutlet: UIStepper!
+    @IBOutlet weak var notificationQuantityStepperOutlet: UIStepper!
     @IBOutlet weak var notificationQuantityTextfield: UITextField!
     @IBAction func notificationQuantityStepper(_ sender: UIStepper) {
-        notificationQuantityTextfield.text = String(Int(sender.value))
+        notificationQuantityTextfield.text = String(Double(sender.value))
+    }
+    @IBAction func quantityChanged(_ sender: UITextField) {
+        quantityStepperOutlet.value = Double(quantityTextfield.text!)!
+    }
+    @IBAction func notificationQuantityChanged(_ sender: UITextField) {
+        notificationQuantityStepperOutlet.value = Double(notificationQuantityTextfield.text!)!
     }
     @IBOutlet weak var notesTextfield: UITextField!
     @IBAction func saveButtonPressed(_ sender: UIBarButtonItem) {
@@ -27,13 +35,15 @@ class AddToStockViewController: UIViewController, UIPickerViewDelegate, UIPicker
             let okButton = UIAlertAction(title: "OK", style: .default, handler: nil)
             erroralert.addAction(okButton)
             self.present(erroralert, animated: true, completion: nil)
-        } else if Int(quantityTextfield.text!) == nil || Int(notificationQuantityTextfield.text!) == nil {
-            let erroralert = UIAlertController(title: "There was a problem", message: "Vul alstublieft een getal in!" , preferredStyle: .alert)
+        } else if Double(quantityTextfield.text!) == nil || Double(notificationQuantityTextfield.text!) == nil {
+            let erroralert = UIAlertController(title: "There was a problem", message: "Vul alstublieft een getal in, inclusief decimalen!" , preferredStyle: .alert)
             let okButton = UIAlertAction(title: "OK", style: .default, handler: nil)
             erroralert.addAction(okButton)
             self.present(erroralert, animated: true, completion: nil)
         } else {
-            putScoreInList(productname: productNameTextfield.text!, selectedCategory: quantityTypeTextfield.text!, quantity: quantityTextfield.text!, notificationQuantity: notificationQuantityTextfield.text!, notes: notesTextfield.text!)
+            let doublequantity = Double(quantityTextfield.text!)
+            let doublenotificationquantity = Double(notificationQuantityTextfield.text!)
+            putScoreInList(productname: productNameTextfield.text!, selectedCategory: quantityTypeTextfield.text!, quantity: doublequantity!, notificationQuantity: doublenotificationquantity!, notes: notesTextfield.text!)
             performSegue(withIdentifier: "saveUnwind", sender: self)
         }
         
@@ -67,7 +77,7 @@ class AddToStockViewController: UIViewController, UIPickerViewDelegate, UIPicker
         quantityTypeTextfield.inputView = quantityPicker
         
     }
-    func putScoreInList (productname : String, selectedCategory : String, quantity: String, notificationQuantity: String, notes: String) {
+    func putScoreInList (productname : String, selectedCategory : String, quantity: Double, notificationQuantity: Double, notes: String) {
         let url = URL(string: "https://ide50-wytzz.legacy.cs50.io:8080/list")!
         var request = URLRequest(url: url)
         request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
@@ -78,12 +88,6 @@ class AddToStockViewController: UIViewController, UIPickerViewDelegate, UIPicker
         }
         task.resume()
     }
-    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        super.prepare(for: segue, sender: sender)
-//        guard segue.identifier == "saveUnwind" else { return }
-//        putScoreInList(productname: productNameTextfield.text!, selectedCategory: quantityTypeTextfield.text!, quantity: quantityTextfield.text!, notificationQuantity: notificationQuantityTextfield.text!, notes: notesTextfield.text!)
-//    }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1

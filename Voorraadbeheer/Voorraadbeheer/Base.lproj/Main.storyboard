@@ -242,7 +242,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Tdw-qC-D08">
+                                        <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="10000" translatesAutoresizingMaskIntoConstraints="NO" id="Tdw-qC-D08">
                                             <rect key="frame" x="265" y="35.5" width="94" height="29"/>
                                             <connections>
                                                 <action selector="stepper:" destination="rIe-SV-5ec" eventType="valueChanged" id="lSJ-c3-q7r"/>
@@ -351,6 +351,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="notificationQuantityChanged:" destination="KEb-ox-wII" eventType="editingDidEnd" id="6y7-gR-YP5"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Melding bij hoeveelheid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVq-CI-mYa">
                                 <rect key="frame" x="16" y="335" width="180" height="21"/>
@@ -366,14 +369,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="4mA-XW-ZDF">
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="10000" translatesAutoresizingMaskIntoConstraints="NO" id="4mA-XW-ZDF">
                                 <rect key="frame" x="265" y="365" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="notificationQuantityStepper:" destination="KEb-ox-wII" eventType="valueChanged" id="K45-Mt-Lhq"/>
                                 </connections>
                             </stepper>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="rKk-uv-A7D">
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="10000" translatesAutoresizingMaskIntoConstraints="NO" id="rKk-uv-A7D">
                                 <rect key="frame" x="265" y="263" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
@@ -395,6 +398,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="quantityChanged:" destination="KEb-ox-wII" eventType="editingChanged" id="fac-hV-NWf"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bgB-oc-tkb">
                                 <rect key="frame" x="13" y="482" width="333" height="30"/>
@@ -422,8 +428,10 @@
                     </navigationItem>
                     <connections>
                         <outlet property="notesTextfield" destination="bgB-oc-tkb" id="ooC-gx-hrP"/>
+                        <outlet property="notificationQuantityStepperOutlet" destination="4mA-XW-ZDF" id="doq-cl-xax"/>
                         <outlet property="notificationQuantityTextfield" destination="HZZ-Bb-NQk" id="LjP-Nm-T4M"/>
                         <outlet property="productNameTextfield" destination="E8e-XE-vwL" id="R3U-Eq-ltU"/>
+                        <outlet property="quantityStepperOutlet" destination="rKk-uv-A7D" id="ckJ-EA-EMv"/>
                         <outlet property="quantityTextfield" destination="C6u-IU-vxI" id="Uw8-oc-puE"/>
                         <outlet property="quantityTypeTextfield" destination="42H-w1-z4w" id="qqA-Rp-EMR"/>
                         <segue destination="cce-Xz-TzL" kind="unwind" identifier="saveUnwind" unwindAction="unwindToStockTableViewWithSegue:" id="NHe-Zy-Dlm"/>
