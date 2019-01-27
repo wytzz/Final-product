@@ -132,6 +132,7 @@ class AddToStockTableViewController: UITableViewController, UIPickerViewDelegate
         request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
         request.httpMethod = "POST"
         var scarceproduct : String
+        //checks if product is scarce, adds string so scopebar can be made
         if notificationQuantity >= quantity {
             scarceproduct = "Schaars"
         } else {
@@ -150,6 +151,7 @@ class AddToStockTableViewController: UITableViewController, UIPickerViewDelegate
         request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
         request.httpMethod = "PUT"
         var scarceproduct : String
+        //checks if product is scarce, adds string so scopebar can be made
         if notificationQuantity >= quantity {
             scarceproduct = "Schaars"
         } else {
