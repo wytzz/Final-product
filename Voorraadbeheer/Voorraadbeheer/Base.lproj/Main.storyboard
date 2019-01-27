@@ -23,7 +23,7 @@
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uh8-Ed-27t">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="22"/>
-                                        <color key="backgroundColor" red="0.0" green="0.1442163521" blue="0.54003400260000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.030678896229999999" green="0.11279559879999999" blue="0.45145845410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -35,7 +35,7 @@
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Wachtwoord" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8LE-ef-1Z3">
                                         <rect key="frame" x="0.0" y="72" width="343" height="22"/>
-                                        <color key="backgroundColor" red="0.0" green="0.1442163521" blue="0.54003400260000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.030678896229999999" green="0.11279559879999999" blue="0.45145845410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -82,7 +82,6 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.1442163521" blue="0.54003400260000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="CFQ-sM-2LY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4Qr-mT-opB"/>
                             <constraint firstItem="HoG-Fd-abd" firstAttribute="top" secondItem="CFQ-sM-2LY" secondAttribute="bottom" constant="50" id="QIC-Zy-Jqe"/>
@@ -121,7 +120,7 @@
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CPO-4t-S7j">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="22"/>
-                                        <color key="backgroundColor" red="0.0" green="0.1442163521" blue="0.54003400260000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.030678896229999999" green="0.11279559879999999" blue="0.45145845410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -133,7 +132,7 @@
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Wachtwoord" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gME-X0-XU8">
                                         <rect key="frame" x="0.0" y="82" width="343" height="22"/>
-                                        <color key="backgroundColor" red="0.0" green="0.1442163521" blue="0.54003400260000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.030678896229999999" green="0.11279559879999999" blue="0.45145845410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -145,7 +144,7 @@
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Herhaal wachtwoord" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zNI-Kg-bxp">
                                         <rect key="frame" x="0.0" y="164" width="343" height="22"/>
-                                        <color key="backgroundColor" red="0.0" green="0.1442163521" blue="0.54003400260000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.030678896233439445" green="0.11279559880495071" blue="0.45145845413208008" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -189,7 +188,6 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.1442163521" blue="0.54003400260000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="t0F-dE-IkI" secondAttribute="trailing" id="3fX-xX-qHT"/>
                             <constraint firstItem="t0F-dE-IkI" firstAttribute="centerY" secondItem="g2e-t7-dqB" secondAttribute="centerY" id="KPb-sd-prf"/>
@@ -261,12 +259,31 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welkom bij voorraadbeheer voor restaurants!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7C4-NM-zk6">
+                                <rect key="frame" x="16" y="70" width="343" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="icons8-hamburger-100 (1)" translatesAutoresizingMaskIntoConstraints="NO" id="qB1-wp-va7">
+                                <rect key="frame" x="14" y="145" width="131" height="131"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="icons8-combo-chart-100" translatesAutoresizingMaskIntoConstraints="NO" id="2NS-aJ-Xo7">
+                                <rect key="frame" x="228" y="145" width="131" height="131"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.14421635210695821" blue="0.54003400259067358" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="0os-ul-WJv" secondAttribute="trailing" id="4Oh-v6-bEx"/>
                             <constraint firstItem="0os-ul-WJv" firstAttribute="leading" secondItem="rcl-zG-XLF" secondAttribute="leadingMargin" id="PRU-WN-KQW"/>
+                            <constraint firstItem="7C4-NM-zk6" firstAttribute="top" secondItem="OJS-wW-n4p" secondAttribute="top" constant="50" id="SAG-g5-q4t"/>
+                            <constraint firstItem="qB1-wp-va7" firstAttribute="top" secondItem="7C4-NM-zk6" secondAttribute="bottom" constant="8" id="VTg-Vw-T7M"/>
+                            <constraint firstItem="qB1-wp-va7" firstAttribute="leading" secondItem="OJS-wW-n4p" secondAttribute="leading" constant="16" id="WzA-8D-Hjh"/>
+                            <constraint firstItem="7C4-NM-zk6" firstAttribute="leading" secondItem="rcl-zG-XLF" secondAttribute="leading" constant="16" id="cgO-22-rKp"/>
+                            <constraint firstAttribute="trailing" secondItem="7C4-NM-zk6" secondAttribute="trailing" constant="16" id="dOz-ug-k1I"/>
+                            <constraint firstItem="OJS-wW-n4p" firstAttribute="trailing" secondItem="2NS-aJ-Xo7" secondAttribute="trailing" constant="16" id="kBR-ck-cKM"/>
+                            <constraint firstItem="7C4-NM-zk6" firstAttribute="centerX" secondItem="rcl-zG-XLF" secondAttribute="centerX" id="ngt-Zl-Dii"/>
                             <constraint firstItem="0os-ul-WJv" firstAttribute="centerX" secondItem="rcl-zG-XLF" secondAttribute="centerX" id="pw4-Co-KJO"/>
+                            <constraint firstItem="2NS-aJ-Xo7" firstAttribute="top" secondItem="7C4-NM-zk6" secondAttribute="bottom" constant="8" id="qog-SY-EcQ"/>
                             <constraint firstItem="OJS-wW-n4p" firstAttribute="bottom" secondItem="0os-ul-WJv" secondAttribute="bottom" constant="100" id="yFJ-GR-SRZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OJS-wW-n4p"/>
@@ -327,7 +344,6 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.1442163521" blue="0.54003400260000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="oVl-Hn-uva" firstAttribute="top" secondItem="QBX-ZB-QgR" secondAttribute="bottom" constant="10" id="GZO-mU-jSP"/>
                             <constraint firstItem="WHy-mr-8G5" firstAttribute="centerX" secondItem="cNa-Nh-yAQ" secondAttribute="centerX" id="MIx-SQ-x3p"/>
@@ -666,7 +682,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vs7-A1-K7F">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0" green="0.1442163521" blue="0.54003400260000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.030678896229999999" green="0.11279559879999999" blue="0.45145845410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
@@ -705,7 +721,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BBV-tj-8bP">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0" green="0.1442163521" blue="0.54003400260000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.030678896229999999" green="0.11279559879999999" blue="0.45145845410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -718,11 +734,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="icons8-combo-chart-100" width="180" height="180"/>
+        <image name="icons8-hamburger-100 (1)" width="180" height="180"/>
         <image name="icons8-male-user-50" width="37.5" height="37.5"/>
         <image name="icons8-transaction-list-50" width="37.5" height="37.5"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="7E7-Bm-WS1"/>
+        <segue reference="IZ6-vV-Q2e"/>
         <segue reference="eX9-f3-Grd"/>
     </inferredMetricsTieBreakers>
 </document>
