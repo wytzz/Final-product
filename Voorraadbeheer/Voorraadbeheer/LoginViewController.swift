@@ -72,7 +72,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         emailTextfield.setBottomborder()
         PasswordTextfield.setBottomborder()
-        self.view.backgroundColor = UIColor(red: 0 , green: 0.01, blue: 0.45, alpha: 1.0)
+        self.view.backgroundColor = UIColor(red: 0 , green: 0.01, blue: 0.45, alpha: 1.0)// #000273
     }
     @IBAction func loginButton(_ sender: UIButton) {
         Auth.auth().signIn(withEmail: emailTextfield.text!, password: PasswordTextfield.text!) { (user, error) in

@@ -12,13 +12,12 @@ class IntroductionViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(red: 0 , green: 0.01, blue: 0.45, alpha: 1.0)
+        self.view.backgroundColor = UIColor(red: 0 , green: 0.01, blue: 0.45, alpha: 1.0)// #000273
 
         // Do any additional setup after loading the view.
     }
     
     @IBAction func unwindToIntroduction (segue: UIStoryboardSegue) {
-        
     }
     
     /*
