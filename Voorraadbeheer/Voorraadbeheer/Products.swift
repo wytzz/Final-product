@@ -14,6 +14,7 @@ struct products : Codable {
     var quantity: String
     var quantity_type : String
     var notification_quantity : String
+    var scarce_product : String
     
     init(json: [String: Any]) {
         id = json["id"] as? Int ?? -1
@@ -21,8 +22,10 @@ struct products : Codable {
         quantity = json["quantity"] as? String ?? ""
         quantity_type = json["quantity_type"] as? String ?? ""
         notification_quantity = json["notifcation_quantity"] as? String ?? ""
-        
+        scarce_product = json["scarce_product"] as? String ?? ""
     }
+    
+    
 }
 
 

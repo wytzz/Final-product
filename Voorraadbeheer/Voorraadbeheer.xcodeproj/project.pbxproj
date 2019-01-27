@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4D495D82C8A9927146A9313A /* Pods_Voorraadbeheer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B288F4B08B20419B81AECB6 /* Pods_Voorraadbeheer.framework */; };
+		D34D148D21FC91E6007BDA4D /* AddToStockTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34D148C21FC91E6007BDA4D /* AddToStockTableViewController.swift */; };
 		D36BB91321EE1EA100420962 /* ProductController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36BB91221EE1EA100420962 /* ProductController.swift */; };
 		D3B5C34D21E8D48E002EB502 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3B5C34C21E8D48E002EB502 /* GoogleService-Info.plist */; };
 		D3B5C34F21E8DBE5002EB502 /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B5C34E21E8DBE5002EB502 /* IntroductionViewController.swift */; };
@@ -20,15 +21,14 @@
 		D3EC076C21E75FF0008E8FF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3EC076A21E75FF0008E8FF9 /* Main.storyboard */; };
 		D3EC076E21E75FF2008E8FF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3EC076D21E75FF2008E8FF9 /* Assets.xcassets */; };
 		D3EC077121E75FF2008E8FF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3EC076F21E75FF2008E8FF9 /* LaunchScreen.storyboard */; };
-		D3ED355921EF59EC000FDF2C /* AddToStockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ED355821EF59EC000FDF2C /* AddToStockViewController.swift */; };
 		D3ED355B21EF6B24000FDF2C /* StockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ED355A21EF6B24000FDF2C /* StockTableViewCell.swift */; };
-		D3ED355D21EF9A88000FDF2C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ED355C21EF9A88000FDF2C /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2B288F4B08B20419B81AECB6 /* Pods_Voorraadbeheer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Voorraadbeheer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E5AFCBCAFE667F830AF150D /* Pods-Voorraadbeheer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Voorraadbeheer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Voorraadbeheer/Pods-Voorraadbeheer.release.xcconfig"; sourceTree = "<group>"; };
 		861DB59768B0420D7E467BEB /* Pods-Voorraadbeheer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Voorraadbeheer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Voorraadbeheer/Pods-Voorraadbeheer.debug.xcconfig"; sourceTree = "<group>"; };
+		D34D148C21FC91E6007BDA4D /* AddToStockTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToStockTableViewController.swift; sourceTree = "<group>"; };
 		D36BB91221EE1EA100420962 /* ProductController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProductController.swift; path = "/Users/wytzedijk/Documents/Informatiekunde/Project-proposal/Voorraadbeheer/Voorraadbeheer/ProductController.swift"; sourceTree = "<absolute>"; };
 		D3B5C34C21E8D48E002EB502 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D3B5C34E21E8DBE5002EB502 /* IntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
@@ -43,9 +43,7 @@
 		D3EC076D21E75FF2008E8FF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3EC077021E75FF2008E8FF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3EC077221E75FF2008E8FF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D3ED355821EF59EC000FDF2C /* AddToStockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToStockViewController.swift; sourceTree = "<group>"; };
 		D3ED355A21EF6B24000FDF2C /* StockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTableViewCell.swift; sourceTree = "<group>"; };
-		D3ED355C21EF9A88000FDF2C /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +96,10 @@
 				D3ED355A21EF6B24000FDF2C /* StockTableViewCell.swift */,
 				D3B5C35021E8DD3F002EB502 /* SignUpViewController.swift */,
 				D3EC076A21E75FF0008E8FF9 /* Main.storyboard */,
-				D3ED355821EF59EC000FDF2C /* AddToStockViewController.swift */,
+				D34D148C21FC91E6007BDA4D /* AddToStockTableViewController.swift */,
 				D3B5C35621ECE258002EB502 /* Products.swift */,
 				D3B5C35221ECDBFD002EB502 /* AccountViewController.swift */,
 				D3B5C35421ECDC1E002EB502 /* StockTableViewController.swift */,
-				D3ED355C21EF9A88000FDF2C /* TableViewController.swift */,
 				D3EC076D21E75FF2008E8FF9 /* Assets.xcassets */,
 				D3EC076F21E75FF2008E8FF9 /* LaunchScreen.storyboard */,
 				D3EC077221E75FF2008E8FF9 /* Info.plist */,
@@ -197,6 +194,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Voorraadbeheer/Pods-Voorraadbeheer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GMStepper/GMStepper.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -205,6 +203,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GMStepper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -246,12 +245,11 @@
 				D3ED355B21EF6B24000FDF2C /* StockTableViewCell.swift in Sources */,
 				D3B5C35521ECDC1E002EB502 /* StockTableViewController.swift in Sources */,
 				D36BB91321EE1EA100420962 /* ProductController.swift in Sources */,
-				D3ED355921EF59EC000FDF2C /* AddToStockViewController.swift in Sources */,
 				D3EC076921E75FF0008E8FF9 /* LoginViewController.swift in Sources */,
 				D3B5C35321ECDBFD002EB502 /* AccountViewController.swift in Sources */,
-				D3ED355D21EF9A88000FDF2C /* TableViewController.swift in Sources */,
 				D3B5C35721ECE258002EB502 /* Products.swift in Sources */,
 				D3B5C34F21E8DBE5002EB502 /* IntroductionViewController.swift in Sources */,
+				D34D148D21FC91E6007BDA4D /* AddToStockTableViewController.swift in Sources */,
 				D3B5C35121E8DD3F002EB502 /* SignUpViewController.swift in Sources */,
 				D3EC076721E75FF0008E8FF9 /* AppDelegate.swift in Sources */,
 			);

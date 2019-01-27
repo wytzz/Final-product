@@ -11,6 +11,11 @@ import Firebase
 
 class AccountViewController: UIViewController {
 
+    var product : [products] = []
+    var loginuser : String?
+    
+    @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var productCountLabel: UILabel!
     @IBAction func logOutButton(_ sender: UIButton) {
         do {
             try Auth.auth().signOut()
@@ -22,19 +27,20 @@ class AccountViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        ProductController.shared.fetchProducts(user: loginuser!) { (product) in
+            if let product = product {
+                self.updateUI(with: product)
+            }
+        }
+        print(product)
+        emailLabel.text! = loginuser!
+        productCountLabel.text! = String(product.count)
     }
     
+    func updateUI(with product: [products]) {
+        DispatchQueue.main.async {
+            self.product = product
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+}
+}
 }

@@ -28,6 +28,7 @@ PODS:
     - FirebaseCore (~> 5.1)
     - GoogleUtilities/Environment (~> 5.3)
     - GoogleUtilities/UserDefaults (~> 5.3)
+  - GMStepper (2.2)
   - GoogleAppMeasurement (5.4.0):
     - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
     - GoogleUtilities/MethodSwizzler (~> 5.2)
@@ -62,6 +63,7 @@ PODS:
 DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
+  - GMStepper
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -71,6 +73,7 @@ SPEC REPOS:
     - FirebaseAuthInterop
     - FirebaseCore
     - FirebaseInstanceID
+    - GMStepper
     - GoogleAppMeasurement
     - GoogleUtilities
     - GTMSessionFetcher
@@ -83,11 +86,12 @@ SPEC CHECKSUMS:
   FirebaseAuthInterop: 0ffa57668be100582bb7643d4fcb7615496c41fc
   FirebaseCore: 8f49b70f57ab5cbb032ef41d64992ded21606459
   FirebaseInstanceID: e2fa4cb35ef5558c200f7f0ad8a53e212215f93e
+  GMStepper: 89fb106944dfcc3aa3add7164e3ebd463ea2104b
   GoogleAppMeasurement: 98b71f5e04142793729a5ef23e5b96651ff4b70f
   GoogleUtilities: 95996bea7c7d9b8fb811b7507669a4a8762f80c7
   GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
 
-PODFILE CHECKSUM: 66825a743394365ba47de2178f9d57eb287357af
+PODFILE CHECKSUM: baf58b03e26e3ed4dbdbeadc47a7b6d8beaac61d
 
 COCOAPODS: 1.5.3

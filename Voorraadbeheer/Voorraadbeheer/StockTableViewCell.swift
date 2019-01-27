@@ -7,6 +7,9 @@
 //
 
 import UIKit
+protocol StockTableViewCellDegate {
+    func changeQuantity(quantity: String)
+}
 
 class StockTableViewCell: UITableViewCell {
 
@@ -18,21 +21,16 @@ class StockTableViewCell: UITableViewCell {
     @IBOutlet weak var quantityLabel: UILabel!
     @IBOutlet weak var quantityTypeLabel: UILabel!
     
-    
+    var delegate : StockTableViewCellDegate?
     override func awakeFromNib() {
         super.awakeFromNib()
         
     }
-    
-    
-    
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         // Configure the view for the selected state
         stepperOutlet.value = Double(quantityLabel.text!)!
-
     }
 
 }

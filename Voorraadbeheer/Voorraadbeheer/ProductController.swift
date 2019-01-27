@@ -13,8 +13,8 @@ class ProductController {
     
     static let shared = ProductController()
     
-    func fetchProducts(completion: @escaping ([products]?) -> Void) {
-        let urlProducts = URL(string: "https://ide50-wytzz.legacy.cs50.io:8080/list")!
+    func fetchProducts(user: String, completion: @escaping ([products]?) -> Void) {
+        let urlProducts = URL(string: "https://ide50-wytzz.legacy.cs50.io:8080/\(user)")!
         let task = URLSession.shared.dataTask(with: urlProducts) { (data, response, error) in
             do {
                 if let data = data {
