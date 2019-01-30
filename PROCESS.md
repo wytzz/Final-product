@@ -61,6 +61,8 @@ Onder de searchbar een scopebar toegevoegd waardoor er op schaarse producten kan
 Te laat een vraag gesteld wat betrefd het aanpassen van producten, niet geholpen. Puntjes op de i gezet wat betreft de opmaak. In de toevoegpagina kunnen producten nu worden aangepast zonder dat de app op hol slaat.
 
 # Day 18 30-01-2019
+Via vragen eindelijk gelukt om de waardes in rester ook aan te passen wanneer de waardes in StockTableview worden aangepast via de stepper. Ook gevraagd hoe de achtergrondkleur van de searchbar of de textkleur van searchbar moet worden aangepast, was erg moeilijk en moest ik zelf googlen. Uiteindelijk met geen mogelijkheid een oplossing kunnen vinden die werkte. Alle puntjes op de i gezet voor het inleveren van het product.
+
 
 # Day 19 31-01-2019
 
