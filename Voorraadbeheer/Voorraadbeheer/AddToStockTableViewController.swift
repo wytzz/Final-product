@@ -10,19 +10,19 @@ import UIKit
 
 class AddToStockTableViewController: UITableViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
+    
+    //outlets and actions
     @IBOutlet weak var productNameTextfield: UITextField!
     @IBOutlet weak var quantityTypeTextfield: UITextField!
     @IBOutlet weak var quantityTextfield: UITextField!
     @IBAction func quantityStepper(_ sender: UIStepper) {
         quantityTextfield.text = String(Double(sender.value))
-        quantityStepperOutlet.value = Double(quantityTextfield.text!)!
     }
     @IBOutlet weak var quantityStepperOutlet: UIStepper!
     @IBOutlet weak var notificationQuantityTextfield: UITextField!
     
     @IBAction func notificationQuantityStepper(_ sender: UIStepper) {
         notificationQuantityTextfield.text = String(Double(sender.value))
-        notificationQuantityStepperOutlet.value = Double(notificationQuantityTextfield.text!)!
     }
     @IBOutlet weak var notificationQuantityStepperOutlet: UIStepper!
     
@@ -45,7 +45,18 @@ class AddToStockTableViewController: UITableViewController, UIPickerViewDelegate
     @IBAction func notificationQuantityTextfieldEditingDidBegin(_ sender: UITextField) {
         notificationQuantityLabel.isHidden = false
     }
+    
+    @IBAction func notificationQuantityTextfieldEditingDidEnd(_ sender: UITextField) {
+        notificationQuantityStepperOutlet.value = Double(notificationQuantityTextfield.text!)!
+    }
+    
+    @IBAction func quantityTextfieldEditingDidEnd(_ sender: UITextField) {
+        quantityStepperOutlet.value = Double(quantityTextfield.text!)!
+    }
     @IBOutlet weak var notesTextfield: UITextField!
+    
+    
+    
     @IBAction func saveButtonPressed(_ sender: UIBarButtonItem) {
         // when a needed textfield isn't filled in -> give an alert
         if productNameTextfield.text?.isEmpty ?? true || quantityTextfield.text?.isEmpty ?? true || quantityTypeTextfield.text?.isEmpty ?? true || notificationQuantityTextfield.text?.isEmpty ?? true {
@@ -60,7 +71,7 @@ class AddToStockTableViewController: UITableViewController, UIPickerViewDelegate
             erroralert.addAction(okButton)
             self.present(erroralert, animated: true, completion: nil)
             //if the textfields are changed when it's added earlier --> change in rester
-        } else if alreadyfilledin == true {
+        } else if isnewproduct == false {
             let doublequantity = Double(quantityTextfield.text!)
             let doublenotificationquantity = Double(notificationQuantityTextfield.text!)
             changeProduct(id: productid!, user: loginuser!, productname: productNameTextfield.text!, selectedCategory: quantityTypeTextfield.text!, quantity: doublequantity!, notificationQuantity: doublenotificationquantity!, notes: notesTextfield.text!)
@@ -75,30 +86,47 @@ class AddToStockTableViewController: UITableViewController, UIPickerViewDelegate
         
     }
     //variables
-    let quantities = ["liters", "stuks", "gram", "kilogram", "flessen"]
+    let quantities = ["liters", "stuks", "gram", "kilogram", "flessen"] // options for picker
     var product : products?
     var loginuser : String?
     var selectedQuantity: String?
-    var alreadyfilledin = false
     var productid : Int?
+    var isnewproduct : Bool?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         createQuantityPicker()
         hideKeyboardWhenTappedAround()
-        if let product = product {
+        
+        if let product = product { // if an existing product is tapped, show the details
             productNameTextfield.text = product.title
             quantityTypeTextfield.text = product.quantity_type
             quantityTextfield.text = product.quantity
             notificationQuantityTextfield.text = product.notification_quantity
             productid = product.id
-        } else {
+            quantityStepperOutlet.value = Double(quantityTextfield.text!)!
+            notificationQuantityStepperOutlet.value = Double(notificationQuantityTextfield.text!)!
+        } else { //if the add new product "+" button is tapped, hide labels for layout
             quantityLabel.isHidden = true
             productNameLabel.isHidden = true
             quantityTypeLabel.isHidden = true
             notificationQuantityLabel.isHidden = true
+            
         }
+        // set title
+        if isnewproduct! {
+            self.title = "Product toevoegen"
+            
+        } else {
+            self.title = productNameTextfield.text!
+        }
+        
+    }
+    
+    //set statusbar to white text
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
     }
     
     //create Picker when quantitytype is touched
@@ -125,7 +153,7 @@ class AddToStockTableViewController: UITableViewController, UIPickerViewDelegate
         quantityTypeTextfield.text = selectedQuantity
     }
     
-    //addproduct and change product
+    //add a new product
     func addProduct (user: String, productname : String, selectedCategory : String, quantity: Double, notificationQuantity: Double, notes: String) {
         let url = URL(string: "https://ide50-wytzz.legacy.cs50.io:8080/\(user)")!
         var request = URLRequest(url: url)
@@ -144,7 +172,7 @@ class AddToStockTableViewController: UITableViewController, UIPickerViewDelegate
         }
         task.resume()
     }
-    
+    //change a product
     func changeProduct (id: Int, user: String, productname : String, selectedCategory : String, quantity: Double, notificationQuantity: Double, notes: String) {
         let url = URL(string: "https://ide50-wytzz.legacy.cs50.io:8080/\(user)/\(id)")!
         var request = URLRequest(url: url)

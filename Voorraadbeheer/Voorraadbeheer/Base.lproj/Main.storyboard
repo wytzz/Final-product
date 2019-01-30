@@ -223,7 +223,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="0os-ul-WJv">
-                                <rect key="frame" x="16" y="473" width="343" height="94"/>
+                                <rect key="frame" x="16" y="523" width="343" height="94"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="akP-i2-sZH">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="36"/>
@@ -284,7 +284,7 @@
                             <constraint firstItem="7C4-NM-zk6" firstAttribute="centerX" secondItem="rcl-zG-XLF" secondAttribute="centerX" id="ngt-Zl-Dii"/>
                             <constraint firstItem="0os-ul-WJv" firstAttribute="centerX" secondItem="rcl-zG-XLF" secondAttribute="centerX" id="pw4-Co-KJO"/>
                             <constraint firstItem="2NS-aJ-Xo7" firstAttribute="top" secondItem="7C4-NM-zk6" secondAttribute="bottom" constant="8" id="qog-SY-EcQ"/>
-                            <constraint firstItem="OJS-wW-n4p" firstAttribute="bottom" secondItem="0os-ul-WJv" secondAttribute="bottom" constant="100" id="yFJ-GR-SRZ"/>
+                            <constraint firstItem="OJS-wW-n4p" firstAttribute="bottom" secondItem="0os-ul-WJv" secondAttribute="bottom" constant="50" id="yFJ-GR-SRZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OJS-wW-n4p"/>
                     </view>
@@ -322,14 +322,14 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nio-zg-hG8">
-                                <rect key="frame" x="163.5" y="242" width="48" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nio-zg-hG8">
+                                <rect key="frame" x="187.5" y="242" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WHy-mr-8G5">
-                                <rect key="frame" x="138" y="318.5" width="99" height="30"/>
+                                <rect key="frame" x="138" y="538" width="99" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="    Uitloggen    ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -352,13 +352,13 @@
                             <constraint firstItem="J1e-pz-byf" firstAttribute="centerX" secondItem="cNa-Nh-yAQ" secondAttribute="centerX" id="cWw-Mw-IcY"/>
                             <constraint firstItem="J1e-pz-byf" firstAttribute="top" secondItem="oVl-Hn-uva" secondAttribute="bottom" constant="50" id="eLc-pN-0eT"/>
                             <constraint firstItem="oVl-Hn-uva" firstAttribute="centerX" secondItem="cNa-Nh-yAQ" secondAttribute="centerX" id="hFM-vM-xd6"/>
-                            <constraint firstItem="WHy-mr-8G5" firstAttribute="centerY" secondItem="cNa-Nh-yAQ" secondAttribute="centerY" id="qWb-TP-gjY"/>
+                            <constraint firstItem="a2n-nq-0c9" firstAttribute="bottom" secondItem="WHy-mr-8G5" secondAttribute="bottom" constant="50" id="jyp-bS-D5O"/>
                             <constraint firstItem="Nio-zg-hG8" firstAttribute="top" secondItem="J1e-pz-byf" secondAttribute="bottom" constant="10" id="s0E-gY-2Ap"/>
                             <constraint firstItem="Nio-zg-hG8" firstAttribute="centerX" secondItem="cNa-Nh-yAQ" secondAttribute="centerX" id="uxs-Dh-62b"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="a2n-nq-0c9"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Account" image="icons8-male-user-50" id="GuI-AY-Wtb"/>
+                    <tabBarItem key="tabBarItem" title="Account" image="icons8-customer-40" id="GuI-AY-Wtb"/>
                     <connections>
                         <outlet property="emailLabel" destination="oVl-Hn-uva" id="cBF-6V-Hzg"/>
                         <outlet property="productCountLabel" destination="Nio-zg-hG8" id="Tcj-ma-dWt"/>
@@ -437,6 +437,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Producten" largeTitleDisplayMode="always" id="C2n-Ec-erF">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Q5P-hc-c3e">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="2fb-oP-VOk" kind="presentation" identifier="addproduct" id="DDJ-dG-tRz"/>
                             </connections>
@@ -480,7 +481,6 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                     <connections>
-                                                        <action selector="jajaaa:" destination="3Xj-6K-7K0" eventType="valueChanged" id="jfm-yk-hYn"/>
                                                         <action selector="productNameTextfieldEditingDidBegin:" destination="3Xj-6K-7K0" eventType="editingDidBegin" id="LxH-So-Am5"/>
                                                     </connections>
                                                 </textField>
@@ -550,6 +550,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                     <connections>
                                                         <action selector="quantityTextfieldEditingDidBegin:" destination="3Xj-6K-7K0" eventType="editingDidBegin" id="brn-0j-hJG"/>
+                                                        <action selector="quantityTextfieldEditingDidEnd:" destination="3Xj-6K-7K0" eventType="editingDidEnd" id="cX0-Pn-6Hx"/>
                                                     </connections>
                                                 </textField>
                                                 <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="VPo-KB-H4m">
@@ -589,6 +590,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                     <connections>
                                                         <action selector="notificationQuantityTextfieldEditingDidBegin:" destination="3Xj-6K-7K0" eventType="editingDidBegin" id="GfB-eh-WeN"/>
+                                                        <action selector="notificationQuantityTextfieldEditingDidEnd:" destination="3Xj-6K-7K0" eventType="editingDidEnd" id="bUT-2L-y9p"/>
                                                     </connections>
                                                 </textField>
                                                 <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="gKm-Af-QiJ">
@@ -619,7 +621,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KOF-bq-aNY">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KOF-bq-aNY">
                                                     <rect key="frame" x="16" y="0.0" width="343" height="199.5"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -644,11 +646,13 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="weA-2E-cp7">
                         <barButtonItem key="leftBarButtonItem" title="Annuleren" id="Gyf-v6-OpS">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="zpX-iW-ijk" kind="unwind" unwindAction="unwindToStockTableViewWithSegue:" id="Ms1-Iv-CFd"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Opslaan" id="cZu-YX-tYI">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="saveButtonPressed:" destination="3Xj-6K-7K0" id="yxM-JD-B5O"/>
                             </connections>
@@ -679,7 +683,7 @@
             <objects>
                 <navigationController id="bql-mN-U2x" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Voorraad" image="icons8-transaction-list-50" id="qtL-G9-faB"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vs7-A1-K7F">
+                    <navigationBar key="navigationBar" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" id="vs7-A1-K7F">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.030678896229999999" green="0.11279559879999999" blue="0.45145845410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -687,6 +691,9 @@
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="t1p-rb-H7r">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="QMt-BV-yuW" kind="relationship" relationship="rootViewController" id="6CB-dJ-eTe"/>
                     </connections>
@@ -722,6 +729,12 @@
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.030678896229999999" green="0.11279559879999999" blue="0.45145845410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -735,12 +748,12 @@
     </scenes>
     <resources>
         <image name="icons8-combo-chart-100" width="180" height="180"/>
+        <image name="icons8-customer-40" width="30" height="30"/>
         <image name="icons8-hamburger-100 (1)" width="180" height="180"/>
-        <image name="icons8-male-user-50" width="37.5" height="37.5"/>
         <image name="icons8-transaction-list-50" width="37.5" height="37.5"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="IZ6-vV-Q2e"/>
+        <segue reference="7E7-Bm-WS1"/>
         <segue reference="eX9-f3-Grd"/>
     </inferredMetricsTieBreakers>
 </document>

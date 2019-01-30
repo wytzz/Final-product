@@ -16,8 +16,13 @@ class IntroductionViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
+    //unwind from register or login page to introduction
     @IBAction func unwindToIntroduction (segue: UIStoryboardSegue) {
+    }
+    
+    //set statusbar to white text
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
     }
     
     /*

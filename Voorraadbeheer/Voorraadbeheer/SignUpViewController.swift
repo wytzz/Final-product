@@ -15,18 +15,21 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var PasswordTextfield: UITextField!
     @IBOutlet weak var PasswordCheckTextfield: UITextField!
     
+    
+    //sign in function/button pressed
     @IBAction func signUpButton(_ sender: UIButton) {
+        //checks if password is the same as the repeated password and gives alert
         if PasswordTextfield.text != PasswordCheckTextfield.text {
             let alert = UIAlertController(title: "There was a problem", message: "There went something wrong with your password" , preferredStyle: .alert)
             let okButton = UIAlertAction(title: "OK", style: .default, handler: nil)
             alert.addAction(okButton)
             self.present(alert, animated: true, completion: nil)
-        } else {
+        } else { //continues if passwordcheck is ok
         Auth.auth().createUser(withEmail: EmailTextfield.text!, password: PasswordTextfield.text!) { (user, error) in
-                if user != nil {
+                if user != nil { // creates user
                     print("user Created!")
                     self.performSegue(withIdentifier: "gotologin", sender: self)
-                } else {
+                } else { // error with password or email. It isn't a proper email or password is too short
                     if let myError = error?.localizedDescription {
                         let erroralert = UIAlertController(title: "There was a problem", message: myError , preferredStyle: .alert)
                         let okButton = UIAlertAction(title: "OK", style: .default, handler: nil)
@@ -44,6 +47,12 @@ class SignUpViewController: UIViewController {
         EmailTextfield.setBottomborder()
         PasswordTextfield.setBottomborder()
         PasswordCheckTextfield.setBottomborder()
+        hideKeyboardWhenTappedAround()
+    }
+    
+    //set statusbar to white text
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
     }
    
 }

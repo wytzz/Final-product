@@ -7,12 +7,11 @@
 
 import Foundation
 import UIKit
-//import HTMLString
 
 class ProductController {
     
     static let shared = ProductController()
-    
+    //get products from rester database per user
     func fetchProducts(user: String, completion: @escaping ([products]?) -> Void) {
         let urlProducts = URL(string: "https://ide50-wytzz.legacy.cs50.io:8080/\(user)")!
         let task = URLSession.shared.dataTask(with: urlProducts) { (data, response, error) in

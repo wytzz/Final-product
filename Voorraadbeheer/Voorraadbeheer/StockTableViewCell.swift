@@ -7,29 +7,25 @@
 //
 
 import UIKit
-protocol StockTableViewCellDegate {
-    func changeQuantity(quantity: String)
-}
 
 class StockTableViewCell: UITableViewCell {
 
     @IBOutlet weak var stepperOutlet: UIStepper!
     @IBOutlet weak var productNameLabel: UILabel!
     @IBAction func stepper(_ sender: UIStepper) {
+        //when stepper is pressed label changes as well
         quantityLabel.text = String(Double(sender.value))
     }
     @IBOutlet weak var quantityLabel: UILabel!
     @IBOutlet weak var quantityTypeLabel: UILabel!
     
-    var delegate : StockTableViewCellDegate?
     override func awakeFromNib() {
         super.awakeFromNib()
-        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        // Configure the view for the selected state
+        //current value of the label is also current value of the stepper
         stepperOutlet.value = Double(quantityLabel.text!)!
     }
 

@@ -25,23 +25,27 @@ class AccountViewController: UIViewController {
             print("Couldn't log out")
         }
     }
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewDidAppear(_ animated: Bool) {
         self.view.backgroundColor = UIColor(red: 0 , green: 0.01, blue: 0.45, alpha: 1.0) // #000273
         ProductController.shared.fetchProducts(user: loginuser!) { (product) in
             if let product = product {
                 self.updateUI(with: product)
             }
         }
-        print(product)
+        //shows email
         emailLabel.text! = loginuser!
-        productCountLabel.text! = String(product.count)
+    }
+    
+    //set statusbar to white text
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
     }
     
     func updateUI(with product: [products]) {
         DispatchQueue.main.async {
             self.product = product
-
-}
-}
+            //show how many products you have
+            self.productCountLabel.text! = String(product.count)
+        }
+    }
 }
