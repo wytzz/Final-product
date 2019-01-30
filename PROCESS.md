@@ -8,7 +8,7 @@ Niets kunnen doen door ziekte.
 Moet iets uitgebreider, er werd aangeraden niet met firebase te werken maar in rester. 
 
 # Day 4 10-01-2019
-In het groepsgesprek over de app gesproken. Er werd toch aangeraden met firebase de loginfunctie te doen. Groepsgenoot zei dat dit makkelijk was. De database van de producten wel op rester maken.
+In het groepsgesprek over de app gesproken. Er werd toch aangeraden met firebase de loginfunctie te doen. Groepsgenoot zei dat dit makkelijk was. De database van de producten wel via rester maken.
 
 # Day 5 11-01-2019
 Begonnen met de inlogfunctie, er kan een account aangemaakt worden via Firebase. Verder alle viewcontrollers aangemaakt en aan elkaar gekoppeld voor de deadline van het eerste prototype.
@@ -32,3 +32,38 @@ Tegen veel problemen aangelopen die nog niet zijn opgelost aan het einde van de 
 - [ ] Cell highlighten wanner te weinig is
 - [ ] Opmaak
 - [ ] Aantal is niet hetzelfde als stepper
+
+# Day 9 17-01-2019
+Producten kunnen worden verwijderd uit rester. 
+
+# Day 10 18-01-2019
+Ziek, niet aan app kunnen werken
+
+# Day 11 21-01-2019
+Ziek, niet aan app kunnen werken
+
+# Day 12 22-01-2019
+Thuis aan app gewerkt vanwege sneeuw. Stepper is nu zelfde als label, zowel in toevoegen als tableview. Wanneer de hoeveelheid van een product minder is dan melding wordt de achtergrond nu rood. Nieuw product wordt direct geladen in de tableview wanneer het wordt toegevoegd.
+
+# Day 13 23-01-2019
+Gesproken met Martijn vanwege ziekte begin in de week. Besloten om een filterfunctie toe te voegen in stockbtableview. Begonnen aan de opmaak van de app. 
+
+# Day 14 24-01-2019
+Tijdens de opmaak van de app besloten om de toevoegpagina toch weer in een tableviewcontroller te maken om het simpel te houden. Opmaak afgekregen. Begonnen aan een filterfunctie.
+
+# Day 15 25-01-2019
+Searchbar toegevoegd in stocktableview producten kunnen nu op naam worden gezocht. Het aanpassen van producten gaat lastig, alle producten gaan door elkaar.
+
+# Day 16 28-01-2019
+Onder de searchbar een scopebar toegevoegd waardoor er op schaarse producten kan worden gefilterd. Vraag gesteld hoe ik het beste de prodcuten kan aanpassen. Emma had helaas geen antwoord op mijn vraag. Account pagina verbeterd.
+
+# Day 17 29-01-2019
+Te laat een vraag gesteld wat betrefd het aanpassen van producten, niet geholpen. Puntjes op de i gezet wat betreft de opmaak. In de toevoegpagina kunnen producten nu worden aangepast zonder dat de app op hol slaat.
+
+# Day 18 30-01-2019
+Via vragen eindelijk gelukt om de waardes in rester ook aan te passen wanneer de waardes in StockTableview worden aangepast via de stepper. Ook gevraagd hoe de achtergrondkleur van de searchbar of de textkleur van searchbar moet worden aangepast, was erg moeilijk en moest ik zelf googlen. Uiteindelijk met geen mogelijkheid een oplossing kunnen vinden die werkte. Alle puntjes op de i gezet voor het inleveren van het product.
+
+
+# Day 19 31-01-2019
+
+# Day 20 01-02-2019
