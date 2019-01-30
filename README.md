@@ -1,7 +1,9 @@
 # Voorraadbeheer voor horecagelegenheden
 
 _Wytze Dijkstra 10779299_
+
 _Minor Programmeren - Programmeerproject - Apps IOS (Winter) I_
+
 _30-01-2019_
 
 ## Probleem
