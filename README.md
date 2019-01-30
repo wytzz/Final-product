@@ -1,8 +1,8 @@
 # Voorraadbeheer voor horecagelegenheden
 
-_Wytze Dijkstra 10779299
-Minor Programmeren - Programmeerproject - Apps IOS (Winter) I
-30-01-2019_
+_Wytze Dijkstra 10779299_
+_Minor Programmeren - Programmeerproject - Apps IOS (Winter) I_
+_30-01-2019_
 
 ## Probleem
 Voor een horecagelegenheid en met name restaurants is niet altijd op orde wat de preciese voorraad is. Veel koks kijken  even snel wat er in het magazijn staan en bestellen en preppen(sauzen maken e.d.) waarvan zij denken dat het nodig is. Het kan dan nog wel eens voorkomen dat er wat wordt vergeten te maken of niet wordt besteld. Dit zou echter gemakkelijk bijgehouden kunnen worden via een app.
