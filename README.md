@@ -18,6 +18,8 @@ Via een app waarbij de voorraad van een restaurant wordt bijgehouden zal het nau
 ## Repository
 De [Voorraadbeheer](https://github.com/wytzz/Final-product/tree/master/Voorraadbeheer) folder bevat alle bestanden om de applicatie te laten werken. De afbeeldingen die gebruikt zijn voor deze repository zijn te vinden in de [doc](https://github.com/wytzz/Final-product/tree/master/doc) folder.
 
+## [Instructiefilmpje](https://youtu.be/X3SSGUCfGek)
+
 ## Dankwoord
 Voor deze applicatie is er geen gebruik gemaakt van externe data. Echter is er wel gebruik gemaakt van [Firebase](https://firebase.google.com/) en [CS50](https://cs50.readthedocs.io/ide/online/) om data online te zetten en te gebruiken. Voor het maken van de zoekbalk is [deze turtorial](https://www.raywenderlich.com/472-uisearchcontroller-tutorial-getting-started) gebruikt. Tijdens het maken van deze applicatie was [Stackoverflow](https://stackoverflow.com) en zijn gebruikers onmisbaar voor het creëren van het product. De afbeeldingen in de applicatie zijn verkregen via [Icons8](https://icons8.com/icons)
 
